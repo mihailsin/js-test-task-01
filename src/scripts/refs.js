@@ -1,4 +1,5 @@
 export const refs = {
+  currencyForm: document.querySelector('.latest-rates'),
   selectField: document.querySelector('#base-rate'),
-  currenciesList: document.querySelector('.values__list'),
+  currenciesList: document.querySelector('.currency__list'),
 };

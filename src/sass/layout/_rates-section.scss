@@ -1,5 +1,53 @@
 .wrapper {
+  height: 100vh;
+
+  background: rgb(92, 143, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 143, 153, 1) 0%,
+    rgba(70, 70, 168, 0.9836309523809523) 60%,
+    rgba(63, 130, 144, 1) 100%
+  );
+
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  padding: 5rem;
+}
+.latest-rates {
+  height: 3rem;
+}
+#base-rate {
+  display: block;
+
+  border: 2px solid #000000;
+  border-radius: 3rem;
+
+  width: 30%;
+  height: 100%;
+
+  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.currency__option {
+  background: rgb(92, 143, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 143, 153, 1) 0%,
+    rgba(70, 70, 168, 0.9836309523809523) 60%,
+    rgba(63, 130, 144, 1) 100%
+  );
+}
+.currency {
+  margin-top: 3rem;
+}
+.currency__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }

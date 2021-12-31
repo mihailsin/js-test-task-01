@@ -7,7 +7,7 @@ const options = async data => {
   return keys
     .map(key => {
       return `
-       <option value="">${key}</option>
+       <option value="${key}" class="currency__option">${key}</option>
         `;
     })
     .join('');
