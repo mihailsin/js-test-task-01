@@ -6,7 +6,7 @@
   "homepage": "https://github.com/mihailsin/js-test-task-01",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/*.html --public-url //"
+    "build": "parcel build src/*.html --public-url /js-test-task-01/"
   },
   "repository": {
     "type": "git",
