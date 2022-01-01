@@ -1,6 +1,6 @@
 const axios = require('axios').default;
 
-axios.defaults.baseURL = `https://api.frankfurter.app/latest`;
+axios.defaults.baseURL = `https://api.frankfurter.app/latest?`;
 
 export const ratesApi = {
   baseCurrency: '',
@@ -12,9 +12,7 @@ export const ratesApi = {
   },
 
   async getRatesByQuery() {
-    const response = await axios.get(
-      `https://api.frankfurter.app/latest?from=${this.baseCurrency}`,
-    );
+    const response = await axios.get(`from=${this.baseCurrency}`);
     const data = response.data.rates;
     return data;
   },

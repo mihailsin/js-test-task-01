@@ -21,7 +21,3 @@ export const rates = async data => {
 export const renderRates = markup => {
   refs.currenciesList.insertAdjacentHTML('beforeend', markup);
 };
-
-// rates(ratesApi.getRates())
-//   .then(markup => renderRates(markup))
-//   .catch(error => console.log(error.message));

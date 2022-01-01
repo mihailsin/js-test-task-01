@@ -1,0 +1,19 @@
+#calculator {
+  display: none;
+  margin-top: 5rem;
+}
+.calculator__form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#amount {
+  margin-right: 2rem;
+}
+#base-currency {
+  margin-right: 2rem;
+}
+.text {
+  margin-right: 2rem;
+}
