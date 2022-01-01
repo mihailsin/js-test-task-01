@@ -8,6 +8,7 @@ html {
 }
 body {
   background-color: var(--primary-bckg-color);
+  background-image: url(../images/background.jpg);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -39,7 +40,7 @@ img {
   height: auto;
 }
 a {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 

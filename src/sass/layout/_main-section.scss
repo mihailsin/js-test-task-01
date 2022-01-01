@@ -1,25 +1,28 @@
 .wrapper {
   height: 100vh;
 
-  background: rgb(92, 143, 153);
-  background: linear-gradient(
-    90deg,
-    rgba(92, 143, 153, 1) 0%,
-    rgba(70, 70, 168, 0.9836309523809523) 60%,
-    rgba(63, 130, 144, 1) 100%
+  background: rgb(56, 59, 73);
+  background: radial-gradient(
+    circle,
+    rgba(56, 59, 73, 1) 0%,
+    rgba(19, 16, 16, 0.896796218487395) 60%,
+    rgba(0, 0, 0, 1) 100%
   );
 
   border: 1px solid #000000;
   border-radius: 1rem;
-  padding: 5rem;
 }
 .latest-rates {
   height: 3rem;
 }
+.latest-rates__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 #base-rate {
   display: block;
 
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   border-radius: 3rem;
 
   width: 30%;
@@ -29,19 +32,20 @@
   margin-left: auto;
   margin-right: auto;
 
+  color: #ffffff;
+
   background: transparent;
   &:hover {
     cursor: pointer;
   }
 }
 .currency__option {
-  background: rgb(92, 143, 153);
-  background: linear-gradient(
-    90deg,
-    rgba(92, 143, 153, 1) 0%,
-    rgba(70, 70, 168, 0.9836309523809523) 60%,
-    rgba(63, 130, 144, 1) 100%
-  );
+  border: 1px solid #000000;
+  border-radius: 2rem;
+  background-color: #000000;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .currency {
   margin-top: 3rem;

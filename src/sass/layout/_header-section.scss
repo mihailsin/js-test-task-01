@@ -1,0 +1,34 @@
+.header {
+  margin-bottom: 1rem;
+}
+.container {
+}
+.nav {
+}
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.nav__item {
+  width: 100%;
+  text-align: center;
+}
+.nav__link {
+  display: inline-block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  &:hover {
+    color: yellow;
+    background: rgb(180, 182, 190);
+    background: radial-gradient(
+      circle,
+      rgba(180, 182, 190, 1) 0%,
+      rgba(78, 78, 78, 1) 60%,
+      rgba(54, 52, 52, 1) 100%
+    );
+  }
+}
