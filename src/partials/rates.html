@@ -13,12 +13,25 @@
           </ul>
         </nav>
       </header>
-      <h3 class="latest-rates__title">Select base rate</h3>
-      <form class="latest-rates">
-        <select name="select" id="base-rate"></select>
-      </form>
-      <div class="currency">
-        <ul class="currency__list"></ul>
+      <div id="rates">
+        <form class="latest-rates">
+          <select name="select" id="base-rate">
+            <option value="" class="currency__option" selected disabled>Select base rate</option>
+          </select>
+        </form>
+        <div class="currency">
+          <ul class="currency__list"></ul>
+        </div>
+      </div>
+      <div id="calculator">
+        <form class="calculator__form">
+          <label for="amount"></label>
+          <input id="amount" type="text" />
+          <label for="base-currency"></label>
+          <select name="base-currency-select" id="base-currency"></select>
+          <span>in</span>
+          <select name="end-currency-select" id="end-currency"></select>
+        </form>
       </div>
     </div>
   </div>
