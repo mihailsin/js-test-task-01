@@ -7,8 +7,9 @@ export const refs = {
   currenciesList: document.querySelector('.currency__list'),
   currenciesRates: document.querySelector('#rates'),
 
-  currenciesCalculator: document.querySelector('#calculator'),
+  currenciesCalculator: document.querySelector('.calculator-wrapper'),
   amountField: document.querySelector('#amount'),
   fromField: document.querySelector('#from-currency'),
   intoField: document.querySelector('#into-currency'),
+  resultField: document.querySelector('#result'),
 };

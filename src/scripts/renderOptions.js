@@ -1,7 +1,7 @@
 import { ratesApi } from './ratesApi';
 import { refs } from './refs';
 
-const options = async data => {
+export const options = async data => {
   const response = await data;
   const keys = Object.keys(response);
   return keys
@@ -13,10 +13,14 @@ const options = async data => {
     .join('');
 };
 
-const renderOptions = markup => {
-  refs.selectField.insertAdjacentHTML('beforeend', markup);
+export const renderOptions = (markup, ref) => {
+  ref.insertAdjacentHTML('beforeend', markup);
 };
 
 options(ratesApi.getRates())
-  .then(markup => renderOptions(markup))
+  .then(markup => {
+    renderOptions(markup, refs.selectField);
+    renderOptions(markup, refs.fromField);
+    renderOptions(markup, refs.intoField);
+  })
   .catch(error => console.log(error.message));
