@@ -32,3 +32,19 @@
     );
   }
 }
+
+#rates-trigger {
+}
+#calculator-trigger {
+}
+
+.is-active {
+  color: yellow;
+  background: rgb(180, 182, 190);
+  background: radial-gradient(
+    circle,
+    rgba(180, 182, 190, 1) 0%,
+    rgba(78, 78, 78, 1) 60%,
+    rgba(54, 52, 52, 1) 100%
+  );
+}

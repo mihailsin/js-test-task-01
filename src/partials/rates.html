@@ -25,14 +25,20 @@
       </div>
       <div class="calculator-wrapper">
         <form class="calculator__form" id="calculator">
-          <label for="amount"></label>
-          <input id="amount" type="text" />
-          <label for="from-currency"></label>
-          <select name="from-currency-select" id="from-currency"></select>
-          <span class="text">in</span>
-          <select name="into-currency-select" id="into-currency"></select>
-          <button type="submit" id="calculate">Convert</button>
-          <span id="result">Result</span>
+          <div class="input-wrapper">
+            <label for="amount"></label>
+            <input id="amount" type="text" />
+            <label for="from-currency"></label>
+            <select name="from-currency-select" id="from-currency"></select>
+            <span class="text">in</span>
+            <select name="into-currency-select" id="into-currency"></select>
+          </div>
+          <div class="button-wrapper">
+            <button type="submit" id="calculate">Convert</button>
+          </div>
+          <div class="output-wrapper">
+            <span id="result">Result</span>
+          </div>
         </form>
       </div>
     </div>

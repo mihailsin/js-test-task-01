@@ -1,19 +1,57 @@
 .calculator-wrapper {
   display: none;
+  justify-content: center;
   margin-top: 5rem;
 }
 .calculator__form {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 #amount {
+  width: 6rem;
   margin-right: 2rem;
+
+  border: 1px solid var(--primary-text-color);
+  background-color: transparent;
+  color: var(--primary-text-color);
+  &:hover {
+    cursor: pointer;
+  }
 }
-#base-currency {
-  margin-right: 2rem;
+#from-currency {
+  margin-right: 1rem;
+  background-color: transparent;
+  color: var(--primary-text-color);
+  &:hover {
+    cursor: pointer;
+  }
+}
+#into-currency {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  &:hover {
+    cursor: pointer;
+  }
 }
 .text {
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+.input-wrapper {
+  margin-bottom: 3rem;
+}
+
+.button-wrapper {
+  margin-bottom: 3rem;
+}
+#calculate {
+  font-size: larger;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.output-wrapper {
 }
